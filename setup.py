@@ -70,7 +70,7 @@ setup(
             "autoflake==1.7.7",
             "black==24.1.1",
             "freezegun",
-            "isort==5.10.1",
+            "isort==5.13.2",
             "mypy~=1.8.0",
             "pandas-stubs",
             "pre-commit",
