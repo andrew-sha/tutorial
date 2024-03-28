@@ -5,18 +5,17 @@
     ":rebaseStalePrs",
     ":dependencyDashboard"
   ],
-  "dependencyDashboard": true,
   "schedule":[
     "at any time"
   ],
-  "customManagers": [
-    {
-      "customType": "regex",
-      "fileMatch": ["setup.py"],
-      "matchStrings": ["SQLMESH_VERSION = "],
-      "datasourceTemplate": "pypi"
-    }
-  ],
+  // "customManagers": [
+  //   {
+  //     "customType": "regex",
+  //     "fileMatch": ["setup.py"],
+  //     "matchStrings": ["SQLMESH_VERSION = "],
+  //     "datasourceTemplate": "pypi"
+  //   }
+  // ],
   "packageRules": [
     {
       "enabledManagers": ["npm"]
