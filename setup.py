@@ -49,7 +49,7 @@ setup(
     install_requires=[
         ("sqlmesh" if os.environ.get("_INSTALL_SQLMESH_DEV") else SQLMESH),
         # Until we are on a release with this fix: https://github.com/TobikoData/sqlmesh/pull/2296
-        "duckdb<0.10.1",
+        "duckdb<0.10.2",
         "fastapi==0.110.0",
         "httpx",
         "humanize",
