@@ -68,7 +68,7 @@ setup(
         "dev": [
             f"apache-airflow=={os.environ.get('AIRFLOW_VERSION', '2.4.3')}",
             "autoflake==1.7.7",
-            "black==24.1.1",
+            "black==24.3.0",
             "freezegun",
             "isort==5.10.1",
             "mypy~=1.8.0",
