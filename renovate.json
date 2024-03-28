@@ -15,9 +15,10 @@
       "fileMatch": ["^setup.py$"],
       "matchStrings": ["SQLMESH_VERSION = .(?<currentValue>.*)."],
       "datasourceTemplate": "github-releases",
-      "depNameTemplate": "TobikoData/sqlmesh"
+      "packageNameTemplate": "TobikoData/sqlmesh",
+      "depNameTemplate": "sqlmesh"
     }
-  ],
+  ]
 }
 
 
