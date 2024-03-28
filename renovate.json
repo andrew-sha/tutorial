@@ -5,6 +5,7 @@
     ":rebaseStalePrs",
     ":dependencyDashboard"
   ],
+  "dependencyDashboard": true,
   "schedule":[
     "at any time"
   ],
