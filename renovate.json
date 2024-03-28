@@ -8,20 +8,16 @@
   "schedule":[
     "at any time"
   ],
-  "enabledManagers": ["npm"],
-  // "customManagers": [
-  //   {
-  //     "customType": "regex",
-  //     "fileMatch": ["setup.py"],
-  //     "matchStrings": ["SQLMESH_VERSION = "],
-  //     "datasourceTemplate": "pypi"
-  //   }
-  // ],
-  // "packageRules": [
-  //   {
-  //     "enabledManagers": ["npm"]
-  //   }
-  // ]
+  "enabledManagers": ["custom.regex"],
+  "customManagers": [
+    {
+      "customType": "regex",
+      "fileMatch": ["^setup.py$"],
+      "matchStrings": ["SQLMESH_VERSION = .(?<currentValue>.*)."],
+      "datasourceTemplate": "github-releases",
+      "depNameTemplate": "sqlmesh"
+    }
+  ],
 }
 
 
