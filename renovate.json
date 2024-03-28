@@ -8,6 +8,7 @@
   "schedule":[
     "at any time"
   ],
+  "enabledManagers": ["npm"],
   // "customManagers": [
   //   {
   //     "customType": "regex",
@@ -16,11 +17,11 @@
   //     "datasourceTemplate": "pypi"
   //   }
   // ],
-  "packageRules": [
-    {
-      "enabledManagers": ["npm"]
-    }
-  ]
+  // "packageRules": [
+  //   {
+  //     "enabledManagers": ["npm"]
+  //   }
+  // ]
 }
 
 
