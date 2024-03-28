@@ -3,10 +3,6 @@
   "extends": [
     "config:recommended",
     ":rebaseStalePrs",
-    ":dependencyDashboard"
-  ],
-  "schedule":[
-    "at any time"
   ],
   "enabledManagers": ["custom.regex"],
   "customManagers": [
@@ -20,9 +16,3 @@
     }
   ]
 }
-
-
-// Notes:
-// - may want to disable the Dependency Dashboard
-// article about custom regex managers: https://www.augmentedmind.de/2023/09/17/renovate-bot-advanced-tips-part-2/
-// Renovate docs about custom regex managers: https://docs.renovatebot.com/modules/manager/regex/
