@@ -1,7 +1,21 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
-    "config:recommended"
+    "config:recommended",
+    ":rebaseStalePrs"
   ],
-  "prHourlyLimit": 3
+  "schedule":[
+    "at any time"
+  ]
+  // "packageRules": [
+  //   {
+  //     "enabledManagers": ["npm"]
+  //   }
+  // ]
 }
+
+
+// Notes:
+// - may want to disable the Dependency Dashboard
+// article about custom regex managers: https://www.augmentedmind.de/2023/09/17/renovate-bot-advanced-tips-part-2/
+// Renovate docs about custom regex managers: https://docs.renovatebot.com/modules/manager/regex/
