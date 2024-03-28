@@ -6,12 +6,12 @@
   ],
   "schedule":[
     "at any time"
+  ],
+  "packageRules": [
+    {
+      "enabledManagers": ["npm"]
+    }
   ]
-  // "packageRules": [
-  //   {
-  //     "enabledManagers": ["npm"]
-  //   }
-  // ]
 }
 
 
