@@ -5,7 +5,7 @@
     ":rebaseStalePrs",
   ],
   "enabledManagers": ["custom.regex"],
-  "schedule": "hourly",
+  "schedule": "every hour",
   "customManagers": [
     {
       "customType": "regex",
