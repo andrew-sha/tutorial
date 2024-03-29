@@ -5,7 +5,7 @@
     ":rebaseStalePrs",
   ],
   "enabledManagers": ["custom.regex"],
-  "schedule": "cron(* * * * *)",
+  "schedule": "cron(0 * * * *)",
   "customManagers": [
     {
       "customType": "regex",
