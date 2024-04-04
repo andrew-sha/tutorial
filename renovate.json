@@ -1,7 +1,6 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": ["config:recommended", ":rebaseStalePrs"],
-  "enabledManagers": ["custom.regex"],
   "recreateWhen": "always",
   "customManagers": [
     {
@@ -10,7 +9,8 @@
       "matchStrings": ["SQLMESH_VERSION = .(?<currentValue>.*)."],
       "datasourceTemplate": "pypi",
       "packageNameTemplate": "sqlmesh",
-      "depNameTemplate": "sqlmesh"
+      "depNameTemplate": "sqlmesh",
+      "branchPrefix": "auto-bump-"
     }
   ]
 }
