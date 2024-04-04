@@ -1,18 +1,15 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "extends": [
-    "config:recommended",
-    ":rebaseStalePrs",
-  ],
+  "extends": ["config:recommended", ":rebaseStalePrs"],
   "enabledManagers": ["custom.regex"],
-  "schedule": "every hour",
+  "recreateWhen": "always",
   "customManagers": [
     {
       "customType": "regex",
       "fileMatch": ["^setup.py$"],
       "matchStrings": ["SQLMESH_VERSION = .(?<currentValue>.*)."],
-      "datasourceTemplate": "github-releases",
-      "packageNameTemplate": "TobikoData/sqlmesh",
+      "datasourceTemplate": "pypi",
+      "packageNameTemplate": "sqlmesh",
       "depNameTemplate": "sqlmesh"
     }
   ]
