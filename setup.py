@@ -8,7 +8,7 @@ from setuptools import find_packages, setup
 
 logger = logging.getLogger(__name__)
 
-SQLMESH_VERSION = "0.79.0"
+SQLMESH_VERSION = "0.82.2"
 SQLMESH = f"sqlmesh[{os.environ.get('_SQLMESH_EXTRAS', '')}]=={SQLMESH_VERSION}"
 
 
