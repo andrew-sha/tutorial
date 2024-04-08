@@ -67,7 +67,7 @@ setup(
         **get_sqlmesh_extras_require(),
         "dev": [
             f"apache-airflow=={os.environ.get('AIRFLOW_VERSION', '2.4.3')}",
-            "autoflake==1.7.7",
+            "autoflake==1.7.8",
             "black==24.1.1",
             "freezegun",
             "isort==5.10.1",
