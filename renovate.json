@@ -6,7 +6,7 @@
     {
       "customType": "regex",
       "fileMatch": ["^setup.py$"],
-      "matchStrings": ["SQLMESH_VERSION = .(?<currentValue>.*)."],
+      "matchStrings": ["SQLMESH_VERSION = .(?<currentValue>\\d+\\.\\d+\\.\\d+)."],
       "datasourceTemplate": "pypi",
       "packageNameTemplate": "sqlmesh",
       "depNameTemplate": "sqlmesh",
