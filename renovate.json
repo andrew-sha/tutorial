@@ -9,8 +9,7 @@
       "matchStrings": ["SQLMESH_VERSION = .(?<currentValue>\\d+\\.\\d+\\.\\d+)."],
       "datasourceTemplate": "pypi",
       "packageNameTemplate": "sqlmesh",
-      "depNameTemplate": "sqlmesh",
-      "branchPrefix": "auto-bump-"
+      "depNameTemplate": "sqlmesh"
     }
   ]
 }
